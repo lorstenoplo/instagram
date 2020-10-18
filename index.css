@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.loader{
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    z-index: 10000;
+}
+
+/* .loader.hidden{
+    animation: fadeOut 6s;
+    animation-fill-mode: forwards;
+} */
+
+.loader > img{
+    width: 20px;
+}
+.load >img{
+    margin-bottom: 10px;
+  width: 90px;
+}
+
+@keyframes fadeOut {
+    95%{
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
